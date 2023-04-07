@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo LocalStorage Site</title>
+    <!-- Bootstraps CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body class="container-lg text-center">
+    <header class="h-25 border border-2 bg-danger text-white">
+        <h2>This is a demo local storage site</h2>
+    </header>
+    <main class="mt-2 d-flex flex-column justify-content-center w-50 m-auto gap-3">
+        <label for="username">Enter your username:</label>
+        <input type="text" name="user" id="user">
+        <button class="btn btn-danger">Submit</button>
+        <button class="btn btn-danger" id="clear">Clear All Users</button>
+        <hr>
+        <p>Here is the list of users</p>
+        <ol type="1" id="list" class="w-25 mx-auto">
+
+        </ol>
+    </main>
+
+    <!-- Bootstraps JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- External JS -->
+    <script src="./index.js"></script>
+</body>
+
+</html>
